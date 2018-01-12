@@ -1,11 +1,19 @@
-  <h1>Welcome to {{ title }}!  </h1>
+  <div id="fullpage">
+    <app-header></app-header>
+ <!-- <h1>Welcome to {{ title }}!  </h1>-->
   <nav class = "navbar navbar-inverse container-fluid">
     <ul class="nav navbar-nav">
       <li><a routerLink="/Home">Home</a></li>
       <li><a routerLink="/AboutUs">AboutUs</a></li>
       <li><a routerLink="/ContactUs">ContactUs</a></li>
     </ul>
+    <ul>
+      <li class ="pull-right"><a routerLink="/Register"> Register  </a></li>
+      <li class ="pull-right">Member<a routerLink="/Login"> Login / </a></li>
+      
+    </ul>
   </nav>
   <br>
   <router-outlet></router-outlet>
- 
+  <app-footer></app-footer>
+</div>

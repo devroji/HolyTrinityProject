@@ -10,6 +10,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { LoginComponent } from './components/home/login/login.component';
+import { RegisterComponent } from './components/home/register/register.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ContactUsComponent,
     HeaderComponent,
     FooterComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,12 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
       { path: 'ContactUs',
         component: ContactUsComponent
       },
+      { path: 'Login',
+      component: LoginComponent
+      },
+      { path: 'Register',
+        component: RegisterComponent
+      }
     ])
   ],
   providers: [],
